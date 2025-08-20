@@ -1,9 +1,9 @@
 # calculos/perfil.py (NUEVA VERSIÓN CON PANDAS)
 # -*- coding: utf-8 -*-
 import os
-import pandas as pd  # Importamos la librería pandas
-from .configuracion import ProyectoConfig
-from .material import MaterialAcero
+import pandas as pd
+from core.config import ProyectoConfig
+from core.materials import MaterialAcero
 
 # ==============================================================================
 # MÓDULO 3 (Parte B): PROPIEDADES DE LA SECCIÓN (LEYENDO XLSX CON PANDAS)

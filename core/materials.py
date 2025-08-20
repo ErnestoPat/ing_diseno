@@ -1,6 +1,6 @@
 # calculos/material.py
 # -*- coding: utf-8 -*-
-from .configuracion import ProyectoConfig
+from core.config import ProyectoConfig
 
 # ==============================================================================
 # MÓDULO 3 (Parte A): PROPIEDADES DEL MATERIAL

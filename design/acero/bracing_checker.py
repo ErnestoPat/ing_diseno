@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import collections
 from enum import Enum
-from ...core.configuracion import MetodoDiseno, ProyectoConfig
+from core.config import MetodoDiseno, ProyectoConfig
 
 # --- CLASES (sin cambios) ---
 class ArriostramientoTipo(Enum):

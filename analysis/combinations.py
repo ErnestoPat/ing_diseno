@@ -1,6 +1,6 @@
 # calculos/combinaciones.py (ACTUALIZADO)
 # -*- coding: utf-8 -*-
-from .configuracion import ProyectoConfig, NormativaAcciones, MetodoDiseno
+from core.config import ProyectoConfig, NormativaAcciones, MetodoDiseno
 
 class GestorCombinaciones:
     def __init__(self, config: ProyectoConfig):

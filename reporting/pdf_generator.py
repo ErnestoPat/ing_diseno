@@ -1,10 +1,11 @@
 # report_generator.py (VERSIÓN COMPLETA Y FINAL)
 # -*- coding: utf-8 -*-
 
+import os
 from fpdf import FPDF
-from calculos.configuracion import ProyectoConfig
-from calculos.viga import Viga
-from calculos.cargas import CargaPuntual, CargaDistribuida
+from core.config import ProyectoConfig
+from analysis.model import Viga
+from analysis.loads import CargaPuntual, CargaDistribuida
 
 class ReportePDF(FPDF):
     """
@@ -185,6 +186,11 @@ class ReportePDF(FPDF):
         self.escribir_verificacion_resistencia()
         self.escribir_requisitos_arriostramiento()
         
-        # Guardar el PDF en la carpeta 'reportes'
-        ruta_salida = f"reportes/{nombre_archivo}"
+        # Nos aseguramos de que la carpeta de salida exista.
+        directorio_salida = 'reporting/output'
+        if not os.path.exists(directorio_salida):
+            os.makedirs(directorio_salida)
+            
+        # Guardamos el PDF en la ruta correcta.
+        ruta_salida = os.path.join(directorio_salida, nombre_archivo)
         self.output(ruta_salida, 'F')

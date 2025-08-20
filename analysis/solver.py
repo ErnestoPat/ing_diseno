@@ -1,8 +1,8 @@
 # calculos/analizador.py
 # -*- coding: utf-8 -*-
 import numpy as np
-from .viga import Viga, TipoApoyo
-from .cargas import CargaPuntual, CargaDistribuida
+from .model import Viga, TipoApoyo
+from .loads import CargaPuntual, CargaDistribuida
 
 class AnalizadorViga:
     """

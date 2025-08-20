@@ -1,9 +1,9 @@
 # calculos/viga.py (ACTUALIZADO)
 # -*- coding: utf-8 -*-
 from enum import Enum
-from .configuracion import ProyectoConfig
-from .perfil import PerfilAcero
-from .cargas import Carga
+from core.config import ProyectoConfig
+from core.sections import PerfilAcero
+from analysis.loads import Carga
 
 class TipoApoyo(Enum):
     # ... (sin cambios aquí)

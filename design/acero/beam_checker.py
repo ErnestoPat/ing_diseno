@@ -1,7 +1,7 @@
 # calculos/verificador.py (NUEVO MÓDULO)
 # -*- coding: utf-8 -*-
-from .viga import Viga
-from .configuracion import NormativaDisenoAcero, MetodoDiseno
+from analysis.model import Viga
+from core.config import NormativaDisenoAcero, MetodoDiseno
 
 class VerificadorResistencia:
     """
